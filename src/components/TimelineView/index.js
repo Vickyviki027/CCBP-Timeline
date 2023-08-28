@@ -21,9 +21,11 @@ class TimelineView extends Component {
           MY JOURNEY OF <br />
           <span className="title">CCBP 4.0</span>
         </h1>
-        <Chrono items={timelineItemsList} mode="VERTICAL_ALTERNATING">
-          {timelineItemsList.map(eachItem => this.renderPages(eachItem))}
-        </Chrono>
+        <div className="chrono-container">
+          <Chrono items={timelineItemsList} mode="VERTICAL_ALTERNATING">
+            {timelineItemsList.map(eachItem => this.renderPages(eachItem))}
+          </Chrono>
+        </div>
       </div>
     )
   }
